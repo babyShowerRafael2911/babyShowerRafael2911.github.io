@@ -4,7 +4,7 @@ import { Invitation } from './invitation/invitation.component';
 export const routes: Routes = [
   // ejemplo de rutas
   { path: '', redirectTo: 'invitacion', pathMatch: 'full' },
-  { path: 'invitacion', component: Invitation },
+  { path: '', component: Invitation },
 
 ];
 
