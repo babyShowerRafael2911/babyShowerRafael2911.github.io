@@ -18,7 +18,7 @@
           <p class="fonts2">Un hermoso bebé está por vernir!!</p>
         </div>
         <div *ngSwitchCase="3" class="page-content d-flex dino-text-container flex-wrap">
-          <img class="dino2" height="350" width="250">
+          <img class="dino2" >
           <div class="fonts3">
             <p >Se que me esperan con amor al igual que mis papis, por eso nos gustaria que conpartas con nosotros la celebración de mi llegada.</p>
           </div>
@@ -71,6 +71,19 @@
           <img class="dino8" height="300" width="500">
         </div>
         <div *ngSwitchCase="8">
+          <div><p class="fontsA">Por favor Confirma tu asistencia</p></div>
+            <form action="">
+              <table>
+                <tr>
+                  <th>Nombre</th>
+                  <td><input type="text" name="nombre"></td>
+                </tr>
+                <tr>
+                  <th>Si asisto</th>
+                  <td><input type="checkbox" name="Asistire" id="si"></td>
+                </tr>
+              </table>
+            </form>
 
         </div>
       </ng-container>
