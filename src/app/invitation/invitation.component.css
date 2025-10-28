@@ -323,10 +323,10 @@ h1 {
   }
   .image1 {
     position: fixed;
-    bottom: 290px;
+    bottom: 160px;
     right: 0;
-    width: 150px;
-    height: 250px;
+    width: 120px;
+    height: 200px;
     margin: 10px;
     pointer-events: none;
     background-image: url('../images/bbDino1.png');
