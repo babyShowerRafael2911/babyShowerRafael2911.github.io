@@ -19,7 +19,7 @@ body{
   html,
   body{
     background-color: rgb(242, 239, 213);
-    background-image: url(../src/app/images/fondo2.png);
+    background-image: url(../src/app/images/fondo3.png);
     background-repeat: repeat-y; /* 🔹 se repite solo hacia abajo */
     background-position: top center;
     background-size: cover; /* 🔹 llena todo el área visible */
