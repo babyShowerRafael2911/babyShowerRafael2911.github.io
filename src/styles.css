@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body{
+  background-image: url(../src/app/images/fondo1.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+}
+
+@media (max-width: 576px) {
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body{
+    background-color: rgb(242, 239, 213);
+    background-image: url(../src/app/images/fondo2.png);
+    background-repeat: repeat-y; /* 🔹 se repite solo hacia abajo */
+    background-position: top center;
+    background-size: cover; /* 🔹 llena todo el área visible */
+
+    margin: 0;
+    overflow: hidden;
+    height: 40vh;
+    display: contents;
+  }
+
+}

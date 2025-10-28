@@ -1,0 +1,311 @@
+/** Tipo de letras**/
+@font-face {
+  font-family: 'BabyGirly';
+  src: url('../fonts/BabyGirly.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Carmitta';
+  src: url('../fonts/Carmitta.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Marchila';
+  src: url('../fonts/Marchila.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/**Formato color de iconos**/
+.icono{
+  color: rgb(29, 71, 7);
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/**Animación de dinosaurio***/
+.container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+.image1 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 320px;
+   margin: 10px;
+   pointer-events: none;
+  background-image: url('../images/bbDino1.png');
+  background-size: cover;
+  background-position: right;
+  opacity: 1;
+
+   animation: bounce 2s ease-in-out infinite;
+}
+@keyframes bounce {
+  0%,100%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-30px);
+  }
+}
+h1 {
+  color: rgb(47, 87, 56);
+  text-align: center;
+  font-family: 'Carmitta';
+  font-size: clamp(2rem, 8vw, 7rem);
+  opacity: 0;
+  transform: translateY(100px);
+  animation: entrarArriba 4s ease forwards;
+}
+@keyframes entrarArriba {
+  from { opacity: 0; transform: translateY(-100px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/** Animación del libro **/
+.book-container {
+  perspective: 1500px;
+  text-align: center;
+  margin-top: 3rem;
+}
+.book {
+  position: relative;
+  width: 80vw;
+  max-width: 850px;
+  aspect-ratio: 2.2 / 1;
+  margin: auto;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(170, 205, 143);
+  border: 1px solid #ccc;
+  padding: 2vw;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+  transform-origin: left;
+  transition: transform 1s ease;
+  font-family: 'Carmitta', serif;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page.flipped {
+  transform: rotateY(180deg);
+  z-index: 0;
+}
+
+/** Animación jeep **/
+.dino-jeep {
+  animation: floatIn 1.2s ease-out forwards;
+}
+@keyframes floatIn {
+  0% { opacity: 0; transform: translateY(30px) scale(0.8); }
+  60% { opacity: 1; transform: translateY(-10px) scale(1.05); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+/** Imágenes de dinosaurios **/
+.dino,
+.dino2,
+.dino3,
+.dino7,
+.dino8 {
+  background-size: cover;
+  background-position: center;
+}
+.dino {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 20vw;
+  max-width: 200px;
+  height: auto;
+  background-image: url('../images/bbDino3.png');
+}
+.dino2 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 25vw;
+  max-width: 250px;
+  height: auto;
+  background-image: url('../images/bbDino2.png');
+}
+.dino3 {
+  width: 10vw;
+  height: 12vw;
+  max-width: 120px;
+  background-image: url('../images/hojitas1.png');
+}
+.mesaRegalo {
+  position: relative;
+  background-image: url('../images/mesaRegalos.png');
+  background-size: cover;
+  width: 200px;
+  height: 100px;
+  background-position: center;
+}
+.dino7 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 25vw;
+  max-width: 200px;
+  background-image: url('../images/bbDino7.png');
+}
+.dino8 {
+  width: 50vw;
+  height: 10vw;
+  max-width: 300px;
+  background-image: url('../images/bbsdino.png');
+  margin: 10px auto;
+}
+
+/** Estilos de fuentes **/
+.fontsPapis {
+  color: rgb(7, 129, 21);
+  text-align: center;
+  font-family: 'Marchila';
+  font-size: clamp(1.1rem, 3.5vw, 4.0rem);
+}
+.fonts1 {
+  color: rgb(29, 71, 7);
+  text-align: center;
+  font-family: 'Marchila';
+  font-size: clamp(3rem, 3.5vw, 3.3rem);
+}
+.fonts2 {
+  color: rgb(29, 71, 7);
+  text-align: center;
+  font-family: 'Marchila';
+  font-size: clamp(2rem, 2.5vw, 2.2rem);
+}
+.fonts3, .fonts4, .fonts5, .fontsC, .fontsD, .fontsA{
+  color: rgb(29, 71, 7);
+  font-family: 'Marchila';
+  line-height: 1.5;
+  margin: 0 auto;
+}
+.fonts3 { font-size: clamp(1.2rem, 2.5vw, 2rem); text-align: right; margin-left: 150px; max-width: 400px;}
+.fonts4 { font-size: clamp(1.2rem, 2.5vw, 2rem); text-align: left; max-width: 400px;}
+.fonts5 { font-size: clamp(1rem, 2vw, 1.5rem); text-align: left; max-width: 600px; }
+.fontsC { font-size: clamp(1.2rem, 2.5vw, 2rem); text-align: center; max-width: 600px; }
+.fontsD { font-size: clamp(1.1rem, 2vw, 1.6rem); text-align: center; max-width: 600px; }
+
+
+/** Layout de texto e imágenes **/
+.dino-text-container,
+.row-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.left-box, .right-box {
+  flex: 1;
+  padding: 10px;
+}
+.center-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.6;
+
+}
+
+/** Mapa **/
+.map-frame {
+  width: 80%;
+  max-width: 350px;
+  aspect-ratio: 1 / 1;
+  margin: 20px auto;
+  border: 2px solid #2c5e1a;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/** Tarjetas Bootstrap **/
+.card {
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/** Ajustes finos para móviles **/
+@media (max-width: 576px) {
+  .book-container { margin-top: 1rem; }
+  .page { padding: 10px; }
+  h1 { font-size: clamp(2rem, 10vw, 4rem); }
+  .dino, .dino2, .dino7 { width: 25vw; }
+  .fonts3, .fonts4, .fonts5, .fontsC, .fontsD {
+    color: rgb(29, 71, 7);
+    font-family: 'Marchila';
+    line-height: 1.5;
+    margin: 0 auto;
+  }
+
+  .fonts1 {
+    color: rgb(29, 71, 7);
+    text-align: center;
+    font-family: 'Marchila';
+    font-size: clamp(1.5rem, 2.5vw, 2.3rem);
+  }
+  .fonts2 {
+    color: rgb(29, 71, 7);
+    text-align: center;
+    font-family: 'Marchila';
+    font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+  }
+  .fonts3 { font-size: clamp(1rem, 1.8vw, 1.5rem); text-align: right; margin-left: 100px; max-width: 250px;}
+  .fonts4 { font-size: clamp(1rem, 1.8vw, 1.5rem); text-align: left; max-width: 400px;}
+  .fonts5 { font-size: clamp(0.8rem, 1.5vw, 1.2rem); text-align: left;max-width: 600px; }
+  .fontsC { font-size: clamp(1rem, 1.5vw, 1.5rem); text-align: center; max-width: 600px;}
+  .fontsD { font-size: clamp(0.9rem, 1.5vw, 1.3rem); text-align: center; max-width: 500px;}
+  .fontsA { font-size: clamp(0.8rem, 1.0vw, 1.0rem); text-align: center; max-width: 500px;}
+
+  .dino3 {
+    width: 09vw;
+    height: 15vw;
+    max-width: 120px;
+    background-image: url('../images/hojitas1.png');
+  }
+  .dino7 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: -10vw;
+    height: 30vw;
+    max-width: 200px;
+    background-image: url('../images/bbDino7.png');
+  }
+  .dino8 {
+    width: 24vw;
+    height: 12vw;
+    max-width: 300px;
+    background-image: url('../images/bbsdino.png');
+  }
+  .mesaRegalo {
+    position: relative;
+    background-image: url('../images/mesaRegalos.png');
+    background-size: cover;
+    width: 24vw;
+    height: 12vw;
+    background-position: center;
+  }
+  }

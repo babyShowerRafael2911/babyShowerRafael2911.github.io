@@ -1,0 +1,89 @@
+
+<h1>BabyShower</h1>
+
+<div class="book-container">
+  <div class="book">
+    <div
+      class="page"
+      *ngFor="let page of pages"
+      [class.flipped]="page < currentPage"
+      [style.zIndex]="getZIndex(page)"
+    >
+      <ng-container [ngSwitch]="page">
+        <div *ngSwitchCase="1" class="page-content d-flex align-items-center justify-content-center flex-wrap">
+          <img class="dino" height="300" width="200">
+          <p class="fonts1">It's a Boy!!!</p>
+        </div>
+        <div *ngSwitchCase="2" class="page-content d-flex align-items-center justify-content-center flex-wrap">
+          <p class="fonts2">Un hermoso bebé está por vernir!!</p>
+        </div>
+        <div *ngSwitchCase="3" class="page-content d-flex dino-text-container flex-wrap">
+          <img class="dino2" height="350" width="250">
+          <div class="fonts3">
+            <p >Se que me esperan con amor al igual que mis papis, por eso nos gustaria que conpartas con nosotros la celebración de mi llegada.</p>
+          </div>
+        </div>
+        <div *ngSwitchCase="4" class="page-content d-flex align-items-center justify-content-center flex-wrap">
+          <div>
+            <p class="fontsA">Acompaña a mis papis</p>
+            <p class="fontsPapis">Adriana Isabel Cebada y </p>
+            <p class="fontsPapis">Gustavo Duran Crisostomo</p>
+            <p class="fontsA">a celebrar mi llegada</p>
+          </div>
+
+        </div>
+        <div *ngSwitchCase="5" class="page-content d-flex align-items-center justify-content-center flex-wrap">
+          <div class="left-box">
+          <i class="bi bi-calendar2-heart icono"></i>
+          <p class="fonts4">Sabado 29 de Noviembre</p>
+          </div>
+          <div class="center-box">
+            <img class="dino3">
+          </div>
+          <div class="right-box">
+            <p class="fonts4">Aparti de las 4:00 pm <i class="bi bi-clock-fill icono"></i></p>
+          </div>
+          <div>
+            <p class="fonts4">Lugar: Salon CRONOS</p>
+            <a href="https://maps.app.goo.gl/PoKcHiizcorcmzwP6"><p class="fonts5">C. Tasmania LT12, Acuitlapilco, 56335 Chimalhuacán, Méx.</p></a>
+
+          </div>
+        </div>
+<!--    <div *ngSwitchCase="6">
+           <div class="right-box">
+              <iframe src="https://www.google.com/maps/embed?pb=!4v1761541995028!6m8!1m7!1sQ8ZJunFWHu8ksOryJ8tB_g!2m2!1d19.42646597846405!2d-98.93201942282184!3f173.19343172803858!4f-5.098149277209274!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+-->
+        <div *ngSwitchCase="6" class="page-content d-flex dino-text-container flex-wrap">
+          <img class="dino7 dino-jeep" height="300" width="200">
+          <div>
+            <i class="bi bi-gift-fill icono"></i>
+            <p class="fontsC">Mesa de regalos</p>
+            <a href="https://mesaderegalos.liverpool.com.mx/eventodebusqueda"><img class="mesaRegalo"></a>
+            <p class="fontsD">51819617</p>
+          </div>
+        </div>
+        <div *ngSwitchCase="7"  class="page-content d-flex align-items-center justify-content-center flex-wrap">
+          <div class="fontsA">
+            <p>Se que muchos brazos llenos de amor me estaran esperando cuando llegue al mundo, no quiero que los tuyos falten.</p>
+          </div>
+          <img class="dino8" height="300" width="500">
+        </div>
+        <div *ngSwitchCase="8">
+
+        </div>
+      </ng-container>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button (click)="prevPage()"><i class="bi bi-chevron-compact-left icono"></i></button>
+    <button (click)="nextPage()"><i class="bi bi-chevron-compact-right icono"></i></button>
+  </div>
+</div>
+<!-- Imagen del dragón moviéndose -->
+<div class="container">
+  <div class="image1">
+  </div>
+</div>
