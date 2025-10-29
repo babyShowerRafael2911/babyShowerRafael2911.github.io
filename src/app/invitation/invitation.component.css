@@ -124,7 +124,8 @@ h1 {
 .dino2,
 .dino3,
 .dino7,
-.dino8 {
+.dino8,
+.dino9 {
   background-size: cover;
   background-position: center;
 }
@@ -156,8 +157,8 @@ h1 {
   position: relative;
   background-image: url('../images/mesaRegalos.png');
   background-size: cover;
-  width: 200px;
-  height: 100px;
+  width: 160px;
+  height: 40px;
   background-position: center;
 }
 .dino7 {
@@ -175,7 +176,19 @@ h1 {
   background-image: url('../images/bbsdino.png');
   margin: 10px auto;
 }
+.dino9 {
 
+  height: auto;
+  border-radius: 8px;
+
+  position: fixed;
+  bottom: 10;
+  right: 0;
+  width: 180px;
+  height: 120px;
+  max-width: 280px;
+  background-image: url('../images/bbDino9.png');
+  }
 /** Estilos de fuentes **/
 .fontsPapis {
   color: rgb(7, 129, 21);
@@ -195,10 +208,10 @@ h1 {
   font-family: 'Marchila';
   font-size: clamp(2rem, 2.5vw, 2.2rem);
 }
-.fonts3, .fonts4, .fonts5, .fontsC, .fontsD, .fontsA{
+.fonts3, .fonts4, .fonts5, .fontsC, .fontsD, .fontsA, .fontsR{
   color: rgb(29, 71, 7);
   font-family: 'Marchila';
-  line-height: 1.5;
+  line-height: 1.4;
   margin: 0 auto;
 }
 .fonts3 { font-size: clamp(1.2rem, 2.5vw, 2rem); text-align: right; margin-left: 150px; max-width: 400px;}
@@ -206,6 +219,8 @@ h1 {
 .fonts5 { font-size: clamp(1rem, 2vw, 1.5rem); text-align: left; max-width: 600px; }
 .fontsC { font-size: clamp(1.2rem, 2.5vw, 2rem); text-align: center; max-width: 600px; }
 .fontsD { font-size: clamp(1.1rem, 2vw, 1.6rem); text-align: center; max-width: 600px; }
+.fontsR { font-size: clamp(1rem, 1.4vw, 1.5rem); text-align: center; max-width: 600px;}
+
 
 
 /** Layout de texto e imágenes **/
@@ -226,7 +241,23 @@ h1 {
   justify-content: center;
   align-items: center;
   flex: 0.6;
-
+}
+/*****/
+.left-box2, .right-box2 {
+  flex: 1;
+  padding: 10px;
+}
+.center-box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.6;
+}
+/****/
+.mesa-box {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
 }
 
 /** Mapa **/
@@ -287,6 +318,8 @@ h1 {
   .fontsC { font-size: clamp(1rem, 1.5vw, 1.5rem); text-align: center; max-width: 600px;}
   .fontsD { font-size: clamp(0.9rem, 1.5vw, 1.3rem); text-align: center; max-width: 500px;}
   .fontsA { font-size: clamp(1rem, 1.5vw, 1.5rem); text-align: center; max-width: 500px;}
+  .fontsR { font-size: clamp(0.8rem, 0.8vw, 1rem); text-align: left; }
+
   .dino2 {
     width: 30vw;
     height: 55vw;
@@ -313,12 +346,24 @@ h1 {
     max-width: 300px;
     background-image: url('../images/bbsdino.png');
   }
+  .dino9 {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+
+    position: fixed;
+    bottom: 60px;
+    right: 0;
+    width: 100px;
+    height: 80px;
+    background-image: url('../images/bbDino9.png');
+  }
   .mesaRegalo {
     position: relative;
     background-image: url('../images/mesaRegalos.png');
     background-size: cover;
-    width: 24vw;
-    height: 12vw;
+    width: 20vw;
+    height: 4vw;
     background-position: center;
   }
   .image1 {
@@ -336,4 +381,21 @@ h1 {
 
     animation: bounce 2s ease-in-out infinite;
   }
+.mesa-box {
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
+  margin: 20px;
+  }
+
+  .left-box2, .right-box2 {
+  flex: 1;
+  padding: 8px;
+}
+.center-box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.1;
+}
 }
