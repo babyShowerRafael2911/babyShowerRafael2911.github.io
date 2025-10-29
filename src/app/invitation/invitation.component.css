@@ -283,7 +283,7 @@ h1 {
   .book-container { margin-top: 0.8rem; }
   .book{
     width: 92vw;
-    height: 65vw;
+    height: 72vw;
     max-width: 850px;
   }
   .page {
@@ -318,7 +318,7 @@ h1 {
   .fontsC { font-size: clamp(1rem, 1.5vw, 1.5rem); text-align: center; max-width: 600px;}
   .fontsD { font-size: clamp(0.9rem, 1.5vw, 1.3rem); text-align: center; max-width: 500px;}
   .fontsA { font-size: clamp(1rem, 1.5vw, 1.5rem); text-align: center; max-width: 500px;}
-  .fontsR { font-size: clamp(0.8rem, 0.8vw, 1rem); text-align: left; }
+  .fontsR { font-size: clamp(0.8rem, 0.8vw, 1rem); text-align: left; margin-top: 40px;}
 
   .dino2 {
     width: 30vw;
