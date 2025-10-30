@@ -62,6 +62,25 @@ export class Invitation implements OnInit {
 
   //Mandar datos del formulario
     confirmarAsistencia(): void {
+      if (!this.nombre) {
+        Swal.fire({
+          title: 'Dato inválido',
+          text: 'Este campo no puede ir vacio',
+          icon: 'warning',
+          confirmButtonColor: '#d16e6e'
+        });
+        return;
+      }
+      if (!Number.isInteger(this.total) || this.total < 1 || this.total > 30) {
+        Swal.fire({
+          title: 'Dato inválido',
+          text: 'Ingresa un número válido',
+          icon: 'warning',
+          confirmButtonColor: '#d16e6e'
+        });
+        return;
+      }
+
       const asistencia = {
         nombre: this.nombre,
         total: this.total,
