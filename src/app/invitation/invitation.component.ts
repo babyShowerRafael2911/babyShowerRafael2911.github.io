@@ -71,7 +71,7 @@ export class Invitation implements OnInit {
         });
         return;
       }
-      if (!Number.isInteger(this.total) || this.total < 1 || this.total > 30) {
+      if (!Number.isInteger(this.total) || this.total < 0 || this.total > 30) {
         Swal.fire({
           title: 'Dato inválido',
           text: 'Ingresa un número válido',
