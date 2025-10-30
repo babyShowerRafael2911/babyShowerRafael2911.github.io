@@ -277,7 +277,56 @@ h1 {
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+/****FORMULARIO*****/
+.form-asistencia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.boton-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+  .btn-confirmar {
+    background-color: #79c388;
+    color: rgb(4, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+      display: inline-block;
+
+  }
+
+  .btn-confirmar:hover {
+    background-color: #02280a;
+    color: rgb(186, 237, 192);
+  }
+  .boton-celda {
+  text-align: center;
+}
+/******MENSAJE DE ALERTA********/
+.swal2-popup.alerta-personalizada {
+  font-family: 'fonts5', sans-serif;
+  background-color: #d8f8be;
+  border: 2px solid #f2c1b6;
+  border-radius: 12px;
+  padding: 20px;
+}
+.swal2-title {
+  color: #d16e6e;
+  font-size: 1.5rem;
+}
+.swal2-content {
+  color: #0f5b03;
+  font-size: 1.1rem;
+}
 /** Ajustes finos para móviles **/
 @media (max-width: 576px) {
   .book-container { margin-top: 0.8rem; }
@@ -398,4 +447,17 @@ h1 {
   align-items: center;
   flex: 0.1;
 }
+
+  .btn-confirmar {
+    background-color: #79c388;
+    color: rgb(4, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+
+  }
 }

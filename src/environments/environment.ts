@@ -9,13 +9,13 @@
 export const environment ={
   production: false,
   firebase: {
-    apiKey: "AIzaSyBuOE1f0_1KxabiWpSL-XJ6ewEaQbfp8WA",
-    authDomain: "baybyshower.firebaseapp.com",
-    projectId: "baybyshower",
-    storageBucket: "baybyshower.firebasestorage.app",
-    messagingSenderId: "606671716737",
-    appId: "1:606671716737:web:3d325296c7e317e46fe880",
-    measurementId: "G-4GDEBFLCHQ"
+    apiKey: "AIzaSyANn1hlfwRGbgzLf0K5512Q3HTCZ3UtZak",
+    authDomain: "babyshowerag-291025.firebaseapp.com",
+    projectId: "babyshowerag-291025",
+    storageBucket: "babyshowerag-291025.firebasestorage.app",
+    messagingSenderId: "719697008753",
+    appId: "1:719697008753:web:75a7fb3ec237c66a1fe3d0",
+    measurementId: "G-QW9B3XENLZ"
   }
 } ;
 

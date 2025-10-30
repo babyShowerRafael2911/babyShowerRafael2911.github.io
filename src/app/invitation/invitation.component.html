@@ -76,17 +76,20 @@
         </div>
         <div *ngSwitchCase="8">
           <div><p class="fontsA">Por favor Confirma tu asistencia</p></div>
-            <form action="">
+            <form (ngSubmit)="confirmarAsistencia()" class="form-asistencia fonts5">
               <table>
                 <tr>
-                  <th>Nombre</th>
-                  <td><input type="text" name="nombre"></td>
+                  <th>Nombre: </th>
+                  <td><input type="text" name="nombre" [(ngModel)]="nombre" required></td>
                 </tr>
                 <tr>
-                  <th>Si asisto</th>
-                  <td><input type="checkbox" name="Asistire" id="si"></td>
+                  <th>¿Con cuantas personas más asistes? </th>
+                  <td><input type="number" name="total" [(ngModel)]="total" required></td>
                 </tr>
               </table>
+              <div class="boton-wrapper">
+                <button type="submit" class="btn-confirmar">Confirmar asistencia</button>
+              </div>
             </form>
 
         </div>
